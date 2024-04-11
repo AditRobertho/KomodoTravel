@@ -1,14 +1,22 @@
 body{
-    margin-top: -1px;
-    background-image: linear-gradient(95deg, #162525, #448f91);
+    /* background styling */
+    background-image: url('https://agathatour.com/wp-content/uploads/2023/01/fajruddin-mudzakkir-TG50QzQzZm0-unsplash-scaled.jpg.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-blend-mode: lighten;
+
+    /* parent styling */
+    margin: -1px 0 ; 
+    /* background-color: linear-gradient(95deg, #162525, #448f91); */
+    font-family: helvetica;
 }
 
 /* Navigation Bar */
 .topnav{
     /* background-color: #162525; */
     background-image: linear-gradient(to left, #273f3f, #0f2829);
-    font-family: helvetica;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: 500;
     color: white;
     height: 3em;
@@ -17,18 +25,23 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    opacity: 94%;
 }
 
 .logo{
     margin-left: 1em;
 }
 
-.pageNav{}
+.pageNav{
+    display: flex;
+    flex-direction: row;
+}
 
 a {
     color: white;
     text-decoration: none;
-    margin: 0 1vw;
+    margin: 0 0.8vw;
+    font-size: 1.6vw;
 }
 
 a:hover {
@@ -42,28 +55,52 @@ a:hover {
 }
 
 .searchContainer{
-    /* margin-right: 1em; */
+    display: flex;
+    flex-direction: row;
+    margin-right: 1em;
     background-color: white;
-    width: 29vw;
+    width: 33vw;
     height: 3.5vw;
-    /* border: 0.2px solid black; */
-    border-radius: 50px;
-    text-align: center;
-    line-height: 2.5vw;
+    border-radius: 20vw;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.searchBox {
-    background-color: transparent;
-    width: 14vw;
+.searchContainer:hover {
+    color: #448f91;
+    box-shadow:0px 0px 30px #aefcd8;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.fa-search {
+    font-size: 1.7vw;
+    color: #162525;
+    opacity: 40%;
+    padding-right: 0.7vw;
+    /* color: rgb(23, 163, 163); */
+}
+
+.fa-search:hover {
+    cursor: pointer;
+}
+
+ .searchBox {
+    justify-content: space-evenly;
+    align-items:  center;
+    width: 17vw;
     height: 3.1vw;
+    background-color: transparent;
     border: none;
     border-style: none;
-    margin-right: 0vw;
-    margin-left: -0.5vw;
+    padding-left: 1vw;
 }
 
 input::placeholder{
-    font-size: 0.9vw;
+    font-size: 1.1vw;
+    /* color: rgb(23, 163, 163); */
 }
 
 input:focus{
@@ -72,29 +109,51 @@ input:focus{
 
 input {
     font-size: 1.5vw;
-}
+} 
 
 #searchBtn {
-    background-color: #448f91;
+    font-size: 1.1vw;
+    background-color: rgb(36, 61, 61) ;
     color: white;
-    border-radius: 50px;
-    height: 2.5vw;
-    width: 5vw;
-    margin-left: 2vw;
-    margin-right: -1vw;
-    font-size: 1vw;
-    font-weight: 100;
+    border-radius: 20vw;
+    height: 2.8vw;
+    width: 5em;
+    opacity: 95%;
 }
 
 #clearBtn {
-    background-color: #448f91;
+    font-size: 1.1vw;
+    background-color: rgb(36, 61, 61) ;
     color: white;
-    border-radius: 50px;
-    height: 2.5vw;
-    width: 5vw;
-    margin-left: 1vw;
-    margin-right: -1vw;
-    font-size: 1vw;
-    font-weight: 100;
+    border-radius: 20vw;
+    height: 2.8vw;
+    width: 5em;
+    opacity: 95%;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+/* Homepage */
+.socials {
+    background-color: red;
+    width: 1.5em;
+    height: 800px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vl {
+    border-left: 4px solid white;
+    height: 400px;
+    margin-bottom: 3em;
+    padding-top: 5em;
+}
+
+.fab {
+    margin: 0.2em 0;
+}
