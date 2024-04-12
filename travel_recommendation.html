@@ -9,31 +9,41 @@
     <link rel="stylesheet" href="travel_recommendation.css" />
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <div class="topnav">
-      <span class="logo">Komodo Travel</span>
 
-      <div class="pageNav">
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact Us</a>
-      </div>
+    <!-- static background-->
+    <div class="gradientCont">
+        <!-- Navigation Bar -->
+        <div class="topnav">
+            <span class="logo">Komodo Travel</span>
+    
+            <div class="pageNav">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+            </div>
+    
+            <div class="searchContainer">
+            <input
+                type="search"
+                class="searchBox"
+                placeholder="Enter a destination or keyword"
+            />
+            <i class="fas fa-search"></i>
+            <button id="searchBtn">Search</button>
+            <button id="clearBtn">Clear</button>
+            </div>
+        </div>
+        <!-- Homepage -->
+        <div id="Home">
+            <p class="titleHome">EXPLORE DREAM DESTINATION</p>
 
-      <div class="searchContainer">
-        <input
-          type="search"
-          class="searchBox"
-          placeholder="Enter a destination or keyword"
-        />
-        <i class="fas fa-search"></i>
-        <button id="searchBtn">Search</button>
-        <button id="clearBtn">Clear</button>
-      </div>
+            <P class="titleDescHome">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra posuere tortor a tristique. In et massa ligula. Fusce accumsan sapien at elementum interdum. Donec eget leo pharetra, ultricies est nec, commodo mauris.</P>
+
+            <button class="bookBtn">Book Now</button>
+        </div>
     </div>
 
-    <!-- static -->
-    <div class="gradientCont"></div>
-    
+    <!-- socials -->
     <div class="staticLayout">
       <div class="socials">
         <div class="vl"></div>
@@ -42,10 +52,11 @@
         <i class="fab fa-twitter"></i>
         <i class="fab fa-youtube"></i>
       </div>
-
     </div>
 
-    <!-- Homepage -->
-    <div id="Home"></div>
+    
+
+    
+
   </body>
 </html>

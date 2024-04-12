@@ -14,17 +14,16 @@ body {
   /* Navigation Bar */
   .topnav {
     /* background-color: #162525; */
-    background-image: linear-gradient(to left, #273f3f, #0f2829);
+    background-image: linear-gradient(to left, rgb(39, 63, 63, 0.8), rgb(15, 40, 41, 0.9));
     font-size: 2vw;
     font-weight: 500;
     color: white;
     height: 3em;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    opacity: 93%;
     position: fixed;
   }
   
@@ -137,6 +136,7 @@ body {
   /* Static layout */
   .staticLayout {
     display: flex;
+    position: fixed;
   }
   
   .socials {
@@ -165,16 +165,33 @@ body {
     opacity: 95%;
   }
   
+  /* gradient color bg */
   .gradientCont {
-    background-image: linear-gradient(45deg, #000000, #2b5c5c ,transparent);
-    opacity: 64%;
-    height: 100vw;
-    width: 100vw;
-    margin-top: 6vw;
+    background-image: linear-gradient(45deg, rgb(0, 0, 0, 0.97), rgb(43, 92, 92, 0.6) ,transparent);
+    /* opacity: 82%; */
+    height: 100%;
+    width: 100%;
     position: fixed;
   }
   
   /* Homepage */
   #Home {
+    /* background-color: red; */
+    width: 50em;
+    margin-top: 10vw;
+    margin-left: 7vw;
+
+    color: white
   }
-  
+
+  .titleHome{
+    font-size: 5vw;
+    width: 10em;
+    margin-bottom: 3vw;
+  }
+
+  .titleDescHome {
+    font-size: 1.3vw;
+    width: 26em;
+    margin-bottom: 3vw;
+  }
