@@ -9,30 +9,29 @@
     <link rel="stylesheet" href="travel_recommendation.css" />
   </head>
   <body>
-    <!-- static background -->
-    <div class="gradientCont">
-      <!-- Navigation Bar -->
-      <div class="topnav">
-        <span class="logo">Komodo Travel</span>
+    <!-- Navigation Bar -->
+    <div class="topnav">
+      <span class="logo">Komodo Travel</span>
 
-        <div class="pageNav">
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#contact">Contact Us</a>
-        </div>
-
-        <div class="searchContainer">
-          <input
-            type="search"
-            class="searchBox"
-            placeholder="Enter a destination or keyword"
-          />
-          <i class="fas fa-search"></i>
-          <button id="searchBtn" class="searchBtnCont">Search</button>
-          <button id="clearBtn" class="searchBtnCont">Clear</button>
-        </div>
+      <div class="pageNav">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
       </div>
 
+      <div class="searchContainer">
+        <input
+          type="search"
+          class="searchBox"
+          placeholder="Enter a destination or keyword"
+        />
+        <i class="fas fa-search"></i>
+        <button id="searchBtn" class="searchBtnCont">Search</button>
+        <button id="clearBtn" class="searchBtnCont">Clear</button>
+      </div>
+    </div>
+    <!-- static background -->
+    <div class="gradientCont">
       <!-- socials -->
       <div class="staticLayout">
         <div class="socials">
@@ -43,10 +42,9 @@
           <i class="fab fa-youtube"></i>
         </div>
       </div>
-      <!-- <div class="scrolledPage"> -->
       <!-- Homepage -->
-      <div class="home">
-        <p id="home" class="titleHome">EXPLORE DREAM DESTINATION</p>
+      <section id="home">
+        <p class="title">EXPLORE DREAM DESTINATION</p>
 
         <p class="titleDescHome">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -56,20 +54,36 @@
         </p>
 
         <button id="bookBtn">Book Now</button>
-      </div>
+      </section>
 
       <!-- About Us -->
-      <div id="about" class="home">
-        <p class="titleAbout">ABOUT</p>
+      <section id="about" >
+        <p class="title">ABOUT</p>
         <p class="titleDescHome">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
           pharetra posuere tortor a tristique. In et massa ligula. Fusce
           accumsan sapien at elementum interdum. Donec eget leo pharetra,
           ultricies est nec, commodo mauris.
         </p>
-      </div>
-      <div>Ourteam</div>
-      <!-- </div> -->
-    </div>
+      </section>
+
+      <section id="contact">
+        <p class="title">Contact</p>
+        <p class="titleDescHome">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          pharetra posuere tortor a tristique. In et massa ligula. Fusce
+          accumsan sapien at elementum interdum. Donec eget leo pharetra,
+          ultricies est nec, commodo mauris.
+        </p>
+      </section>
+      <section class="last-section">
+        <p class="title">Contact</p>
+        <p class="titleDescHome">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          pharetra posuere tortor a tristique. In et massa ligula. Fusce
+          accumsan sapien at elementum interdum. Donec eget leo pharetra,
+          ultricies est nec, commodo mauris.
+        </p>
+      </section>
   </body>
 </html>

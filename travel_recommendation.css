@@ -191,26 +191,27 @@ i:hover {
   overflow: auto;
 }
 
-.scrolledPage {
-  position: absolute;
-}
-
 /* Homepage */
-.home {
-  /* background-color: red; */
+section {
   width: 50em;
   margin-left: 7vw;
-  margin-top: 11vw;
+  padding-top: 7vw;
+  padding-bottom: 7vw;
 
   color: white;
-  padding-bottom: 5em;
+  position: relative;
 }
 
-.titleHome {
-  /* background-color: blue; */
+.last-section {
+  opacity: 0;
+}
+.last-section:hover {
+  cursor: default;
+}
+
+.title {
   font-size: 90px;
   width: 10em;
-  margin-top: 6vw;
   margin-bottom: 3vw;
 }
 
@@ -225,12 +226,4 @@ i:hover {
   font-size: 25px;
   height: 2.5em;
   width: 8em;
-}
-
-.titleAbout {
-  /* background-color: blue; */
-  font-size: 90px;
-  width: 10em;
-  margin-top: 6vw;
-  margin-bottom: 3vw;
 }
